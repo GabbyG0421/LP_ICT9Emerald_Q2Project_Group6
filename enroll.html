@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css " rel="stylesheet">
+
+</head>
+<body style="background-color: rgb(20, 36, 57);">
+    
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+
+        <div class="container-fluid">
+
+            <a class="navbar-brand" href="#"> <img src="OBMC copy.png" alt="logo" height="50px"> </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+            <span class="navbar-toggler-icon"> </span>
+            </button>
+
+
+            <div class="collapse navbar-collapse" id="mynavbar">
+
+                <ul class="navbar-nav me-auto">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html" target="_self"> HOME </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html" target="_self"> MEMBERS </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html" target="_self"> CONTACT </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="enroll.html" target="_self"> ENROLL </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="course.html" target="_self"> COURSES </a>
+                    </li>
+
+                </ul>
+
+                <form class="d-flex">
+                    <input class="form-control" type="text" placeholder="Search">
+                    <button class="btn btn-primary" type="button"> Search 
+                    </button>
+                </form>
+
+            </div>
+
+        </div>
+
+    </nav>
+    
+    <div class="box" id="formtitle"> 
+        <label style="font-family: Arial, Helvetica, sans-serif; font-weight: bolder; color: rgb(20, 36, 57);">Enroll Your Child Here!</label>
+    </div>
+
+    <div class="container mt-3">
+    
+    <form>
+    <h3 style="font-family: Arial, Helvetica, sans-serif; font-weight: bolder;">Student Enrollment Form</h3>
+<div class="box" id="theform">
+    <div class="row">
+   
+    
+
+            <label style="color: rgb(81, 134, 180); font-weight: bold;">Student Information</label>
+            <br>
+            <label>Student Name:</label>
+            <br>
+            <input type="text" id="fname" placeholder="First Name"><br><input type="text" id="fname" placeholder="Last Name">
+            <br>
+            <br>
+            <label>Date of Birth:</label>
+            <input type="text" id="fname" placeholder="DD/MM/YY">
+            <br>
+            <br>
+            <label>Contact Number:</label>
+            <br>
+            <input type="text" id="fname" placeholder="0000 000 0000">
+            <br>
+            <label>Student Address:</label>    
+            <br>
+            <input type="text" placeholder="Full Address">
+            <br>
+            <br>
+
+            <label style="color: rgb(81, 134, 180); font-weight: bold;">Parent/Guardian Information</label>
+            <br>
+            <label>Parent/Guardian Name:</label>
+            <br>
+            <input type="text" id="fname" placeholder="First Name"><br><input type="text" id="fname" placeholder="Last Name">
+            <br>
+            <label>Relationship to Student:</label>
+            <br>
+            <div class="radio">
+            <input type="radio" id="1" name="parent" value="parent">
+            <label for="parent">Parent</label>
+            <input type="radio" id="2" name="grandparent" value="grandparent">
+            <label for="grandparent">Grandparent</label>
+            <input type="radio" id="3" name="guardian" value="guardian">
+            <label for="parent">Guardian</label>
+            </div>
+            <br>
+            <label>Contact Number:</label>
+            <br>
+            <input type="text" id="fname" placeholder="0000 000 0000">
+            <br>
+            <label style="color: rgb(81, 134, 180); font-weight: bold;">Enrollment Information</label>
+            <label>Applying For:</label>
+            <br>
+            <div class="radio">
+            <input type="radio" id="1" name="1" value="1">
+            <label for="1">CASA</label>
+            <input type="radio" id="2" name="2" value="2">
+            <label for="2">Primary</label>
+            <input type="radio" id="3" name="3" value="3">
+            <label for="3">Intermediate</label>
+            <input type="radio" id="4" name="4" value="4">
+            <label for="4">High School</label>
+            </div>
+            <br>
+            <label>Previous school (if this applies):</label>
+            <br>
+            <input type="text" id="fname" placeholder="Name of School">
+            <br>
+            <br>
+            <input type="submit" value="Submit">
+        </div>
+    </div>
+</div>
+</form>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js "></script>
+</body>
+</html>
+
+css:
+#formtitle {
+    background-color: rgb(154, 187, 210);
+    border-color: gray;
+    margin: 50px;
+    padding: 5px;
+    text-align: center;
+}
+
+.container {
+    background-color: white;
+    margin-top: 20px;
+    padding: 15px;   
+    border: 10px solid; 
+    border-color: rgb(154, 187, 210);
+    width: 100px;
+}
+
+h3 {
+    text-align: center;
+    background-color:rgb(154, 187, 210);
+    margin: 60px;
+    padding: 5px;
+
+}
+
+form {   
+    margin: 5px;
+    padding: 5px;
+    display: block;
+}
+
+
+input[type=text] {
+    margin: auto;
+    padding: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    max-width: 500px;
+    text-align: center;
+}
+
+.radio {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    align-items: center;
+    justify-content: center;
+}
+
+button[type=submit] {
+   display: inline-block;
+   padding: 9px 20px;
+   margin-top: 20
+   px;
+}
+
+label {
+    font-weight: bold;
+    text-align: center;
+}
